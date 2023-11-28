@@ -1,0 +1,17 @@
+# Program to take input from a user, and check wether a number is positive or negative (elif statement)
+
+print('Program 3')
+e = int(input('Enter a value: '))
+if e<0:
+    {
+        print('Value is negative')
+    }
+elif e>0:
+    {
+        print('Value is positive')
+    }
+else:
+    {
+        print('Value is 0')
+    }
+    

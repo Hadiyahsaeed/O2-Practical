@@ -1,0 +1,8 @@
+# Program to take a number from a user, and check wether it is zero or not (if statement)
+
+print('Program 2')
+c = int(input('Enter a value: '))
+
+if c == 0:
+    print('Your number is zero')
+    

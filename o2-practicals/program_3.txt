@@ -1,0 +1,10 @@
+# Program to take a number, and check wether it is even or odd (if else statement)
+
+print('Program 3')
+d = int(input('Enter a value: '))
+
+if d%2 == 0:
+    print('Your number is even')
+else:
+    print('Your number is odd')
+ 

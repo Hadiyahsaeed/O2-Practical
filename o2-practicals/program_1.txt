@@ -1,0 +1,7 @@
+# Program to take two values from a user, add them and display the sum 
+print('Program 1')
+a = int(input('Enter first value: '))
+b = int(input('Enter second value: '))
+
+sum = a+b
+print('Sum of both numbers is', sum)
