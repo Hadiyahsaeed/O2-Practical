@@ -1,0 +1,5 @@
+#Program to print the first ten integers
+n=1
+for i in range(10):
+    print(n)
+    n=n+1
