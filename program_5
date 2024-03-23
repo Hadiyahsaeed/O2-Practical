@@ -1,0 +1,7 @@
+# Program to take an integer and a starting and ending range from the user and display the multiplication table
+number = int(input("Enter an integer: "))
+start_range = int(input("Enter the starting range: "))
+end_range = int(input("Enter the ending range: "))
+
+for i in range(start_range, end_range + 1):
+    print(f"{number} * {i} = {number * i}")
