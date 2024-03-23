@@ -1,0 +1,34 @@
+#(ADVANCED)Progarm to take a number, start range and end range from a user and displaying the multiplication table from start range to end range. The checks should be as follows:
+#   1. The numbers can only be non-negative                                    2. The end range can't be smaller than the start range               
+#The program should restart if any of the errors are given
+
+def get_input():
+    num = int(input("Enter an integer: "))
+    start = int(input("Enter the start range: "))
+    end = int(input("Enter the end range: "))
+    return num, start, end
+
+def check_input(num, start, end):
+    if num < 0 or start < 0 or end < 0:
+        raise ValueError("Please enter non-negative values.")
+    if end < start:
+        raise ValueError("End range cannot be smaller than start range.")
+
+def display_multiplication_table(num, start, end):
+    print(f"Multiplication table of {num} from {start} to {end}:")
+    for i in range(start, end+1):
+        print(f"{num} x {i} = {num * i}")
+
+def main():
+    while True:
+        try:
+            num, start, end = get_input()
+            check_input(num, start, end)
+            display_multiplication_table(num, start, end)
+            break  # Exit the loop if everything is successful
+        except ValueError as ve:
+            print(ve)
+            print("Restarting the program...\n")
+
+if __name__ == "__main__":
+    main()
