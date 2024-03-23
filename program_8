@@ -1,0 +1,10 @@
+#Program to print the sum of first ten integers
+n=1
+sum=0
+print('This program will print the sum of the first ten integers')
+
+for i in range(10):
+   sum=sum+n
+   n=n+1
+    
+print("The sum of first ten integers is", sum)
