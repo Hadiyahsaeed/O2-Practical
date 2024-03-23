@@ -1,0 +1,16 @@
+#Program to identify is the number the user has entered is positive, negative or 0. If the number is positive it will identify if it is even or odd
+
+n=int(input('Enter an integer:'))
+
+if n>0:
+    print('Number is positive')
+    if n%2 == 0:
+        print('It is even')
+    else:
+        print('It is odd')
+        
+elif n<0:
+    print('Number is negative')
+else:
+    print('Number is 0')
+        
